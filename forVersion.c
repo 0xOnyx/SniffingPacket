@@ -7,8 +7,6 @@
 #include "dump.h"
 
 #define PACKET_SIZE 4096
-
-
 void fail(const char *err, const char *errLibcap)
 {
   char bufferror[250];
@@ -28,14 +26,6 @@ void usage(char *current_directory)
   printf("Usage => \n\t$: %s <Nbr packet to capture>\n", current_directory);
   exit(1);
 }
-
-void packet_callback(u_char *arg, const pcap_pkthdr *cap_header, const u_char *packet){
-  
-  printf("[INFO]\treceive new packet size => %d \n", cap_header->len);
-  dump(packet, cap_header->len)
-
-}
-
 
 int main(int argc, char **argv)
 {
@@ -73,9 +63,6 @@ int main(int argc, char **argv)
 
   printf("[INFO]\tstart Sniffing on device %s \n", device); 
 
-  pcap_loop(pcap_handle, nbr_packet, packet_callbak, NULL);
-
-  /*
   while(i < nbr_packet)
   {
     packet = pcap_next(pcap_handle, &header);
@@ -84,7 +71,6 @@ int main(int argc, char **argv)
 
     i++;
   }
-  */
   
   pcap_close(pcap_handle);
   pcap_freealldevs(devices);
