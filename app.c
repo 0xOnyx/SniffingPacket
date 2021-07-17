@@ -27,7 +27,7 @@ void usage(char *current_directory)
 {
   printf("Usage => \n\t$: %s <Nbr packet to capture>\n", current_directory);
   exit(1);
-}
+
 
 void packet_callback(u_char *arg, const pcap_pkthdr *cap_header, const u_char *packet){
   
