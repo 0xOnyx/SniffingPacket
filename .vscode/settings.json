@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "pcap.h": "c",
+        "if_ether.h": "c",
+        "ethernet.h": "c",
+        "ip.h": "c"
+    }
+}
