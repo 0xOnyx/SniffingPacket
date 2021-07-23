@@ -26,8 +26,8 @@ void fail_pcap(char *error, char *pcap_error)
 
 void usage(char *current_postion)
 {
-    puts("\e[92m[USAGE]\e[0m");
-    printf("===>\t$: %s \e[92m<Nombre packet to capture -1 to infinity>\e[0m\t\e[93m<Optional Interface to capture default Eth0>\e[0m\n", current_postion);
+    puts("\e[96m[USAGE]\e[0m");
+    printf("\e[96m===>\e[0m\t$: %s \e[92m<Nombre packet to capture -1 to infinity>\e[0m\t\e[93m<Optional Interface to capture default Eth0>\e[0m\n", current_postion);
     
     exit(1);
 }
