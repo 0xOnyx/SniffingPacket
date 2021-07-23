@@ -14,7 +14,7 @@ Simple sniffing packet from a interface
 
 ## USAGE 
 
-* `$: ./sniffingPacket <Nombre packet to capture -1 to infinity>	<Optional Interface to capture default Eth0>`
+* $:` ./sniffingPacket <Number packet to capture use -1 to infinity>	<Optional Interface to capture default Eth0>`
 
 ----
 
